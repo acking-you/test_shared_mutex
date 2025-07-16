@@ -220,7 +220,7 @@ int main() {
     test_correctness<DB::SharedMutex>();
 
     // 第2步：运行性能测试
-    constexpr int test_duration = 2000; // 0.2秒测试时间
+    constexpr int test_duration = 2000; // 2秒测试时间
 
     // 测试标准库实现（可能是 gcc，在 Linux 平台下会使用 pthread_rwlock
     run_performance_tests<std::shared_mutex>("std::shared_mutex", test_duration, 64);
